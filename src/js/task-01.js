@@ -6,8 +6,8 @@ console.log("Number of categories:", itemEl.length);
 
 
 itemEl.forEach(function (item) {
-   return console.log("Category:", item.children[0].textContent,"Elements:",item.children[1].children.length);
-});
+   console.log("Category:",item.firstElementChild.textContent,"\n ","Elements:",item.lastElementChild.children.length) 
+}) ;
 
 
 
