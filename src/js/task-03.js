@@ -14,13 +14,13 @@ const images = [
 ];
 
 
-const list = document.querySelector(".gallery");
-console.log(list);
+const listEl = document.querySelector(".gallery");
+console.log(listEl);
 
 
 const markup = images
  .map((image) => `<li class="list-item new"><img src= ${image.url} alt = ${image.alt} width =200, height = 150</li>`)
  .join("");
 
-list.insertAdjacentHTML("beforeend", markup);
-list.setAttribute("style", "list-style-type:none; display: flex; gap:10px;justify-content: space-between; align-content: center;");
+listEl.insertAdjacentHTML("beforeend", markup);
+listEl.setAttribute("style", "list-style-type:none; display: flex; gap:10px;justify-content: space-between; align-content: center;");
